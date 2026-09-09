@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "npx @opennextjs/cloudflare build",
     "preview": "npx wrangler pages dev .open-next/assets",
-    "deploy": "npx wrangler pages deploy .open-next/assets",
+    "deploy": "npx opennextjs-cloudflare build && npx opennextjs-cloudflare deploy",
     "lint": "eslint"
   },
   "dependencies": {
